@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(187, 247, 98);
+    font-family: "Press Start 2P", "Chakra Petch", "Roboto";
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Header Section */
+
+.gametitlebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.gametitle{
+    font-size: 3rem;
+    color: navy;
+    margin: 20px 20px 10px 20px;
+}
+
+.message{
+    font-size: 1rem;
+    color: rgb(159, 29, 29);
+}
+
+.scorebar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.startbtn{
+    color: black;
+    font-family: "Press Start 2P";
+    padding: 10px 20px;
+    border: 5px groove rgba(13, 12, 12, 0.249);
+    background-color:  rgb(213, 65, 65);
+    cursor: pointer;
+}
+
+.score{
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Main Section */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+
+/* Footer Section */
+
+.footerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.footerinfo{
+    color: rgb(159, 29, 29);
+}
+
+/* Classes added Dyncamically*/ 
+
+/* Layout Classes*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    width: 65vh;
+    height: 65vh;
+    background-color: #ccc;
+    gap: 1px;
+    border: 10px solid black;
+}
+
+.grid-item{
+    background-color: rgb(213, 65, 65);
+    border: 1px solid #cccccc98;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Classes */
+
+.apple{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.snake-path{
+    background-color: rgb(120, 14, 120);
+    border: 3px solid #cccccc98;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
